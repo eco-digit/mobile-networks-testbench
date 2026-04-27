@@ -1,0 +1,30 @@
+{
+    "technology": "5G",
+    "template": "templates/nr_5g/template_campus_siemens_draft.json",
+    "loadProfile" : {
+        "numberUserEquipmentsPerCell": 2,
+        "trafficInputMode": "pcap",
+        "pcap": {
+            "pcapFile" : "sample1.pcap",
+            "pcapIPClients": ["192.168.178.41"],
+            "pcapIPServers": ["52.98.240.130"]
+        },
+        "tcpdump": {
+            "tcpdumpFile" : "capture.txt",
+            "tcpdumpIPClients": ["172.19.0.3"],
+            "tcpdumpIPServers": ["172.19.0.2"]
+        },
+        "distribution": {
+            "packetSizeUplink_bytes": [1500, 300],
+            "packetSizeDownlink_bytes": [1500, 300],
+            "packetSizeUplinkProbability": [0.5, 0.5],
+            "packetSizeDownlinkProbability": [0.5, 0.5],
+            "packetRateUplink_packets_per_second": [8000, 2000],
+            "packetRateDownlink_packets_per_second": [8000, 4000],
+            "packetRateUplinkProbability": [0.5, 0.5],
+            "packetRateDownlinkProbability": [0.5, 0.5],
+            "durationEvaluated_sec": 3600
+        }
+        
+    }
+}

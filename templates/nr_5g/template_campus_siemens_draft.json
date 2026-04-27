@@ -1,0 +1,29 @@
+{
+    "_comment": "all settings here are set for the template with default values, available params can vary per template",
+    "technology": "5G",
+    "templateName": "5G Campus Draft",
+    "radioResourceParameters": {
+        "slotDuration_ms": 1,
+        "availablePRBs": 273,
+        "modulationOrder": 6,
+        "codingRate": 0.75,
+        "mimoLayersUplink": 4,
+        "mimoLayersDownlink": 4,
+        "beamsMUMIMO": 1,
+        "scalingFactorUplink": 1,
+        "scalingFactorDownlink": 1,
+        "numberOfAggregatedCarriers": 1,
+        "symbolsPerSlot": 14,
+        "overheadFraction": 0.15,
+        "subcarriersPerPRB": 12,
+        "partSlotsDownlink": 0.75,
+        "partSlotsUplink": 0.2
+    },
+    "networkParameters": {
+        "numberRadioUnits": 1,
+        "numberDistributedCentralizedUnits": 1,
+        "numberCoreServers": 1,
+        "numberSwitches": 1,
+        "cellsPerRadioUnit": 1
+    }
+}
